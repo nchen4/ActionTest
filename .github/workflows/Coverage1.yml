@@ -6,7 +6,7 @@ on:
     branches:
       - master
 
-name: test-coverage
+name: CoverageRate1
 
 jobs:
   test-coverage:
