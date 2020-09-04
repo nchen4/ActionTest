@@ -47,5 +47,4 @@ jobs:
           pkgCov <- covr::package_coverage(quiet=FALSE, clean=FALSE )
           strCodeCoverateReportName <-  paste( getwd(), "/CoverageReport.html", sep="")
           covr::report( x = pkgCov, file = strCodeCoverateReportName,browse=FALSE)
-        run: covr::codecov()
         shell: Rscript {0}
