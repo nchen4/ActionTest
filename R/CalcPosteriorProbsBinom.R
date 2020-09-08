@@ -10,6 +10,8 @@
 #' @export
 
 
+
+
 CalcPosteriorProbsBinom <- function( dParam1S, dParam2S, dParam1E, dParam2E, dDelta1, dDelta2)
 {
     # Calculate Pr( p_E - p_S > dDelta1| data) = Pr( p_E > p_S+ dDelta1 )
