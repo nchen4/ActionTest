@@ -22,7 +22,7 @@ CalcPosteriorProbsBinomNew <- function( dParam1S, dParam2S, dParam1E, dParam2E, 
 
     lRes <- DependencyCalc::CalcPosteriorProbsBinom(dParam1S, dParam2S, dParam1E, dParam2E, dDelta1, dDelta2)
 
-    return( list( dPPGrtDelta1=dPostProb1, dPPGrtDelta2 = dPostProb2, lDepend <- lRes) )
+    return( list( dPPGrtDelta1=dPostProb1, dPPGrtDelta2 = dPostProb2, lDepend = lRes) )
 }
 
 # Note: the function above has @export which allows users to call it directly where the following are not easily called by users since
