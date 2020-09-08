@@ -32,6 +32,7 @@ jobs:
           options(install.packages.compile.from.source = "never")
           install.packages(c("remotes", "rcmdcheck"))
           remotes::install_deps(dependencies = TRUE)
+          remotes::install_git("https://github.com/nchen4/DependencyCalc")
         shell: Rscript {0}
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
