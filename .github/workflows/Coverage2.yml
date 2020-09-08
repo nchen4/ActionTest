@@ -42,6 +42,8 @@ jobs:
           remotes::install_cran("covr")
           remotes::install_cran("htmltools")
           remotes::install_cran("DT")
+          remotes::install_git("https://github.com/nchen4/ActionTest")
+
         shell: Rscript {0}
 
       - name: Test coverage
