@@ -1,6 +1,6 @@
 
-#' @name CalcPosteriorProbsBinom
-#' @title CalcPosteriorProbsBinom
+#' @name CalcPosteriorProbsBinomNew
+#' @title CalcPosteriorProbsBinomNew
 #' @description { \ifelse{html}{ This function assumes \eqn{\pi}\out{<sub>E</sub>} ~ Beta( dParam1E, dParam2E ) and
 #' \eqn{\pi}\out{<sub>S</sub>}~ Beta( dParam1S, dParam2S ) and computes
 #' Pr( \eqn{\pi}\out{<sub>E</sub>} - \eqn{\pi}\out{<sub>S</sub> } > dDelta1 ) and
@@ -12,7 +12,7 @@
 
 
 
-CalcPosteriorProbsBinom <- function( dParam1S, dParam2S, dParam1E, dParam2E, dDelta1, dDelta2)
+CalcPosteriorProbsBinomNew <- function( dParam1S, dParam2S, dParam1E, dParam2E, dDelta1, dDelta2)
 {
     # Calculate Pr( p_E - p_S > dDelta1| data) = Pr( p_E > p_S+ dDelta1 )
     dPostProb1 <- ProbX1GrX2PlusDelta( dParam1E, dParam2E, dParam1S, dParam2S, dDelta1)

@@ -21,7 +21,7 @@ test_that("Test Name", {
     dExp1   <- 0.5
     dExp2   <- 0.5
 
-    dCalc   <- CalcPosteriorProbsBinom( dA1, dB1, dA2, dB2, dDelta1, dDelta2 )
+    dCalc   <- CalcPosteriorProbsBinomNew( dA1, dB1, dA2, dB2, dDelta1, dDelta2 )
     expect_equal( dCalc$dPPGrtDelta1, dExp1,  tolerance = 0.0001, label = "Pr( > Delta1 )" )
     expect_equal( dCalc$dPPGrtDelta2, dExp2,  tolerance = 0.0001, label = "Pr( > Delta2 )" )
     expect_equal( dCalc$lDepend$dPPGrtDelta1, dExp2,  tolerance = 0.0001, label = "Pr( > Delta2 )" )
