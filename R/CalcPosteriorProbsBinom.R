@@ -8,6 +8,8 @@
 #' and  \eqn{\pi_S}~ Beta( dParam1S, dParam2S ) and computes Pr( \eqn{\pi_E - \piS} > dDelta1 ) and and Pr( \eqn{\pi_E-\pi_S} > dDelta2 )}
 #' }
 #' @export
+
+sfdsafsd()
 CalcPosteriorProbsBinom <- function( dParam1S, dParam2S, dParam1E, dParam2E, dDelta1, dDelta2)
 {
     # Calculate Pr( p_E - p_S > dDelta1| data) = Pr( p_E > p_S+ dDelta1 )
