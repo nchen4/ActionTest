@@ -30,8 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           options(install.packages.compile.from.source = "never")
-          print(getwd())
-          
+          print(getwd())          
           install.packages(c("remotes", "rcmdcheck"))
           remotes::install_git("https://github.com/nchen4/DependencyCalc")
           remotes::install_deps(dependencies = TRUE)
